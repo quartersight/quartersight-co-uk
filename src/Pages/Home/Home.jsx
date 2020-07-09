@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "@reach/router";
 
 class Home extends Component {
   constructor(props) {
@@ -10,22 +9,47 @@ class Home extends Component {
   render() {
     return (
       <>
-        <div className="row">
-          <div className="col-4">
-            <img
-              className="img-thumbnail rounded"
-              src={require("../../Images/Carl_And_Isaac.jpg")}
-              alt="Carl and Isaac sitting in the sun."
-            />
-          </div>
-          <div className="col-2">
-            <h1>Home</h1>
-            <h4>Quarter sight, full vision.</h4>
-            <p>
-              Hello, my name is Carl and I'm starting my career in development.
-              Take a look around and if you like what you see,{" "}
-              <Link to="/contact">send me a message</Link>!
-            </p>
+        <div className="container main-content">
+          <div className="row">
+            <div className="col-md-5">
+              <img
+                className="img-fluid"
+                src={require("../../Images/Carl_And_Isaac.jpg")}
+                alt="Carl and Isaac in the sun"
+              />
+            </div>
+            <div className="col">
+              <h1>Welcome to Quarter Sight Code</h1>
+              <h4>Join me on my journey to become a WebDev</h4>
+              <p>
+                My name is Carl and I'm an aspiring web developer. I'm mainly
+                interested in JavaScript, and I've focused on self-teaching
+                (with a little guidance) the MERN stack. That's MongoDB,
+                ExpressJS, ReactJS, and Node.js.
+              </p>
+              <blockquote className="blockquote">
+                <p className="mb-0 bq">
+                  "I am an extremely motivated and focused individual, with many
+                  years’ experience in different industries and roles, which
+                  gives me a broad and comprehensive knowledge. I am quick to
+                  learn procedures and processes and have a keen eye for detail
+                  which will lead to fluid and transparent work, and in turn
+                  client satisfaction. My positive and forward-thinking attitude
+                  combined with a calm, professional demeanour delivers detailed
+                  and accurate results."
+                  <br />
+                </p>
+                <footer className="blockquote-footer text-right">
+                  from my CV
+                </footer>
+              </blockquote>
+              <p>In other words: I work hard.</p>
+              <p>
+                Am I the best developer that you're going to employ? No. But am
+                I the best developer I can be, always striving to learn and
+                build on what I know? Yes, that's me.
+              </p>
+            </div>
           </div>
         </div>
       </>
