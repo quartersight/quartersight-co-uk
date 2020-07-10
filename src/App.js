@@ -15,10 +15,17 @@ function App() {
       <Router>
         <Navigation />
 
-        <Route path="/" exact={true} component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/contact" component={Contact} />
+        <Route
+          path={process.env.PUBLIC_URL + "/"}
+          exact={true}
+          component={Home}
+        />
+        <Route path={process.env.PUBLIC_URL + "/about"} component={About} />
+        <Route
+          path={process.env.PUBLIC_URL + "/projects"}
+          component={Projects}
+        />
+        <Route path={process.env.PUBLIC_URL + "/contact"} component={Contact} />
         <Footer />
       </Router>
     </>
