@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "@reach/router";
+import { NavLink } from "react-router-dom";
 
 import { FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
@@ -7,11 +7,17 @@ class Navigation extends Component {
   render() {
     return (
       <>
-        <nav className="navbar navbar-dark navbar-expand-md fixed-top bg-dark navigation-clean">
+        <div className="row no-gutters">
+          <div className="col">
+            <img
+              className="d-md-flex d-none mx-auto logo-top"
+              src={require("../../Images/quarter_sight_logo_dark.jpg")}
+              alt="Quarter Sight Logo"
+            />
+          </div>
+        </div>
+        <nav className="navbar navbar-dark navbar-expand-md sticky-top bg-dark navigation-clean navbar-custom-color">
           <div className="container">
-            <a className="navbar-brand" href="/">
-              QS Logo here
-            </a>
             <button
               data-toggle="collapse"
               className="navbar-toggler"
@@ -20,41 +26,76 @@ class Navigation extends Component {
               <span className="sr-only">Toggle navigation</span>
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navcol-1">
-              <ul className="nav navbar-nav ml-auto align-items-center">
-                <li className="nav-item" role="presentation">
-                  <a className="nav-link" href="/">
+            <div
+              className="collapse navbar-collapse flex-grow-1 justify-content-between"
+              id="navcol-1"
+            >
+              <ul className="nav navbar-nav flex-grow-1 justify-content-between ml-auto">
+                <li className="nav-item mouse-pointer" role="presentation">
+                  <NavLink
+                    exact={true}
+                    className="nav-link dark-nav-text"
+                    activeClassName="dark-nav-text-active"
+                    to="/"
+                  >
                     Home
-                  </a>
+                  </NavLink>
                 </li>
-                <li className="nav-item" role="presentation">
-                  <a className="nav-link" href="/about">
+                <li className="nav-item mouse-pointer" role="presentation">
+                  <NavLink
+                    className="nav-link dark-nav-text"
+                    activeClassName="dark-nav-text-active"
+                    to="/about"
+                  >
                     About
-                  </a>
+                  </NavLink>
                 </li>
-                <li className="nav-item" role="presentation">
-                  <a className="nav-link" href="/projects">
+                <li className="nav-item mouse-pointer" role="presentation">
+                  <NavLink
+                    className="nav-link dark-nav-text"
+                    activeClassName="dark-nav-text-active"
+                    to="/projects"
+                  >
                     Projects
-                  </a>
+                  </NavLink>
                 </li>
-                <li className="nav-item" role="presentation">
-                  <a className="nav-link" href="/contact">
+                <li className="nav-item mouse-pointer" role="presentation">
+                  <NavLink
+                    className="nav-link dark-nav-text"
+                    activeClassName="dark-nav-text-active"
+                    to="/contact"
+                  >
                     Contact
-                  </a>
+                  </NavLink>
                 </li>
-                <li className="nav-item">
-                  <div>
-                    <span className="socialLink">
+                <li className="nav-item mouse-pointer">
+                  <div className="allSocialNavBar">
+                    <a
+                      href="https://www.github.com/quartersight"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="socialLink"
+                    >
                       <FaGithub />
-                    </span>
+                    </a>
 
-                    <span className="socialLink">
+                    <a
+                      href="https://www.twitter.com/quartersight"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="socialLink"
+                    >
                       <FaTwitter />
-                    </span>
+                    </a>
 
-                    <span className="socialLink">
+                    <a
+                      href="https://www.linkedin.com/in/carldtrnr"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="socialLink"
+                    >
                       <FaLinkedinIn />
-                    </span>
+                    </a>
                   </div>
                 </li>
               </ul>

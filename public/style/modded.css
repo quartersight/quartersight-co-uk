@@ -1,0 +1,39 @@
+.socialLink {
+  padding-left: 10px;
+  font-size: 30px;
+  padding-top: 0px;
+  color: #763626;
+}
+.socialLink:hover {
+  color: #798d90;
+}
+
+.mouse-pointer {
+  cursor: pointer;
+}
+
+.dark-nav-text {
+  color: #2a3132 !important;
+}
+.dark-nav-text:hover {
+  color: #798d90 !important;
+}
+.dark-nav-text:active {
+  color: #fff !important;
+}
+.dark-nav-text-active {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.navbar-custom-color {
+  background-color: #90afc5 !important;
+}
+
+p {
+  color: #2a3132;
+}
+
+.allSocialNavBar {
+  padding-top: -10px;
+}
