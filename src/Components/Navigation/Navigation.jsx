@@ -11,7 +11,7 @@ class Navigation extends Component {
           <div className="col">
             <img
               className="d-md-flex d-none mx-auto logo-top"
-              src={require("../../Images/quarter_sight_logo_dark.jpg")}
+              src={require("../../Images/quarter_sight_logo_with_text.png")}
               alt="Quarter Sight Logo"
             />
           </div>
