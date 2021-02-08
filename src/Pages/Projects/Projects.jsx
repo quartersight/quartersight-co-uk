@@ -25,6 +25,34 @@ class Projects extends Component {
             <div class="col-md-4">
               <div class="card">
                 <div class="card-body">
+                  <h4 class="card-title">Liztea</h4>
+                  <h6 class="text-muted card-subtitle mb-2">
+                    Simple shopping list generator
+                  </h6>
+                  <p class="card-text">
+                    My wife put me in charge of the weekly shop, but I hate
+                    writing lists. This solves the problem by generating a
+                    comprehensive list based of the meals you are having that
+                    week. There are public and private recipes, and individual
+                    items you can add too!
+                  </p>
+                  <a
+                    class="card-link"
+                    href="https://liztea.quartersight.co.uk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View the app&nbsp;
+                    <FaArrowRight />
+                    <FaGlobe />
+                  </a>
+                </div>
+              </div>
+              <hr />
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
                   <h4 class="card-title">Pident</h4>
                   <h6 class="text-muted card-subtitle mb-2">
                     Broadcast audio playout
